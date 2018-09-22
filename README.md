@@ -53,5 +53,10 @@ class np_fp(metaclass=FuzzyFloatMeta, ftype=np.float128):
     
 class c_fp(metaclass=FuzzyFloatMeta, ftype=complex):
     pass
-
 ```
+
+# Limitations
+
+Any operations provided by the operators module will propogate the class type (and therefore the tolerances).
+However, there are many other functions, especially those that touch c extensions, where the type information will
+be lost, such as ```math.sqrt()```.
