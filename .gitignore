@@ -13,4 +13,6 @@
 
 /src/
 
-/towerdesign/repl.py*
+.coverage
+
+/.tox/

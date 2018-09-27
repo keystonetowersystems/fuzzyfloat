@@ -15,16 +15,21 @@ setup(
     author_email='greg@keystonetowersystems.com',
     packages=find_packages(exclude=('tests',)),
     install_requires=[],
-    python_requires='>=3',
-    setup_requires=[
-        "nose>=1.3.7"
+    tests_require=[
+        "pytest",
+        "pytest-cov"
     ],
-    test_suite="nose.collector",
+    setup_requires=[
+        'tox>=3',
+        'coverage>=4'
+    ],
+    python_requires='>=3',
     zip_safe=True,
     classifiers=[
-        "Programming Language :: Python",
+        "Programming Language :: Python :: 3 :: Only",
         "License :: OSI Approved :: MIT License",
         "Topic :: Scientific/Engineering",
+        "Topic :: Software Development :: Libraries",
         "Operating System :: OS Independent",
         "Intended Audience :: Developers",
         "Intended Audience :: Science/Research",
