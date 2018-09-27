@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name='fuzzyfloat',
-    version='1.0.1.dev1',
+    version='1.0.1',
     description='Utility library that provides a floating point type with tolerance for equality comparisons',
     long_description=readme(),
     long_description_content_type="text/markdown",
