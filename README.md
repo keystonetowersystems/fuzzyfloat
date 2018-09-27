@@ -1,5 +1,8 @@
 # fuzzyfloat
 
+[![PyPI version](https://badge.fury.io/py/fuzzyfloat.svg)](https://badge.fury.io/py/fuzzyfloat)
+[![Build Status](https://travis-ci.com/keystonetowersystems/fuzzyfloat.svg?branch=master)](https://travis-ci.com/keystonetowersystems/fuzzyfloat)
+
 A utility library that provides transparent floating point types with tolerances for equality comparison.
 
 # Getting Started
