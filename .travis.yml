@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+  - "3.7-dev"
+install:
+  - python setup.py install
+  - pip install tox-travis coveralls
+script:
+  - tox
+after_success:
+  - coveralls
