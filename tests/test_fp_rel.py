@@ -15,6 +15,9 @@ def test_cmp_eq():
     assert value == 100.5000001
     assert value == 100.4999999
 
+    value = rel_fp(1e-20)
+    assert value == 0
+
 
 def test_cmp_le():
     value = rel_fp(100)

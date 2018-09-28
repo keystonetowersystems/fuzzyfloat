@@ -1,6 +1,6 @@
 def eq_with_tolerances(ftype, rel_tol=1e-09, abs_tol=0.0):
     def fp_eq(a, b):
-        return ftype.__le__(abs(a - b), max(rel_tol * max(abs(a), abs(b)), abs_tol))
+        return ftype.__le__(abs(a - b), max(rel_tol * max(abs(a), abs(b), 1), abs_tol))
 
     return fp_eq
 
